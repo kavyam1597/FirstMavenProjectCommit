@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--Suite is a collection of test cases-->
+<suite name="MultipleBrowserTesting" parallel="tests" thread-count="5">
+	
+	<!--Test case 1-->
+  <test name="FirefoxTest">
+	  <parameter name="browser"  value="firefox"/>
+    <classes>
+      <class name="seltestng1.CrossBrowser"/>
+    </classes>
+  </test> <!-- This XML has 3 test case values to pass to cross browser class -->
+  
+   <!--Test case 2-->
+  <test name="ChromeTest">
+	  <parameter name="browser"  value="chrome"/>
+    <classes>
+      <class name="seltestng1.CrossBrowser"/>
+    </classes>
+  </test>
+  
+   <!--Test case 3-->
+  <test name="EdgeTest">
+	  <parameter name="browser"  value="edge"/>
+    <classes>
+      <class name="seltestng1.CrossBrowser"/>
+    </classes>
+  </test>
+  
+</suite> <!-- Test suite: to run all the 3 test cases parallely, we have given -->
