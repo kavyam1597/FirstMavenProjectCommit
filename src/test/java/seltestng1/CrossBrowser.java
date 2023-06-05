@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 public class CrossBrowser {
 	
-	WebDriver driver;
+	WebDriver driver; // Declare once as global variabl ro utilise in all the methods of a class
 
 	@Parameters("browser") // comes from XML file
 	@BeforeTest
@@ -35,6 +35,7 @@ public class CrossBrowser {
 		
 	}
 	
+	//Our test case
 	@Test
 	public void petStoreTC1() throws InterruptedException {
 		
