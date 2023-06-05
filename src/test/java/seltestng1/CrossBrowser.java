@@ -37,6 +37,8 @@ public class CrossBrowser {
 	
 	@Test
 	public void petStoreTC1() throws InterruptedException {
+		
+		//Enter to the website
 		driver.get("https://petstore.octoperf.com/");
 		driver.findElement(By.linkText("Enter the Store")).click();
 		Thread.sleep(3000);
